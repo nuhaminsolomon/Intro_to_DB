@@ -1,8 +1,18 @@
--- task_6.sql
--- This script inserts multiple rows into the 'customer' table.
+mysql -u your_username -p
+USE alx_book_store;
+SELECT *
+FROM customer
+WHERE customer_id = 2;
++-------------+------------------+-----------------------+------------------------+
+| customer_id | customer_name    | email                 | address                |
++-------------+------------------+-----------------------+------------------------+
+|           2 | Blessing Malik   | bmalik@sandtech.com   | 124 Happiness Ave.     |
++-------------+------------------+-----------------------+------------------------+
+-- verify_insertion.sql
+USE alx_book_store;
 
--- Insert multiple rows into the customer table
-INSERT INTO customer (customer_id, customer_name, email, address) VALUES
-(2, 'Blessing Malik', 'bmalik@sandtech.com', '124 Happiness Ave.'),
-(3, 'Obed Ehoneah', 'eobed@sandtech.com', '125 Happiness Ave.'),
-(4, 'Nehemial Kamolu', 'nkamolu@sandtech.com', '126 Happiness Ave.');
+SELECT *
+FROM customer
+WHERE customer_id = 2;
+mysql -u your_username -p alx_book_store < verify_insertion.sql
+
