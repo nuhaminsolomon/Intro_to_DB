@@ -20,7 +20,9 @@ def create_database():
             cursor.execute(create_db_query)
             
             print("Database 'alx_book_store' created successfully!")
-            
+
+    except mysql.connector.Error as err:  
+      print("Error creating database:", err) 
     except Error as e:
         print(f"Error: {e}")
         
