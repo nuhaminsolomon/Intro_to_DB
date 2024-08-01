@@ -1,6 +1,3 @@
--- Show all tables in the currently selected database
+USE alx_book_store;
 SHOW TABLES;
-mysql -u your_username -p -D alx_book_store < task_3.sql
-mysql -u your_username -p < task_3.sql
-mysql -u your_username -p -D your_database_name < task_3.sql
-
+mysql -u root -p-(Calculator)-88 < task_3.sql alx_book_store
