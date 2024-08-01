@@ -1,3 +1,4 @@
-sql = "INSERT INTO customer table ( customer_id, customer_name, email, adress) VALUES (%s, %s)"
-val = (1, 'cole Baidoo, 'cbaidoo@sandteech.com', '123 Happiness Ave.')
-mycursor.execute(sql, val)
+-- task_5.sql
+
+INSERT INTO customer (customer_id, customer_name, email, address)
+VALUES (1, 'Cole Baidoo', 'cbaidoo@sandtech.com', '123 Happiness Ave.');
